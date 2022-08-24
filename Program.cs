@@ -201,3 +201,27 @@ employee emp = new employee();
             }
             
 // program - 7
+
+try
+            {
+                Console.WriteLine("Enter i : ");
+                int i = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter j : ");
+                int j = Convert.ToInt32(Console.ReadLine());
+
+                int Divans = i / j;
+                Console.WriteLine(Divans);
+
+            }
+            catch (DivideByZeroException ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+
+            }
+        }
+
+// program -8
+
+// program -9
