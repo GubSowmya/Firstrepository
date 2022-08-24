@@ -224,4 +224,26 @@ try
 
 // program -8
 
+int i, j;
+            Console.WriteLine("Enter 1st Number:");
+            i = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd Number:");
+            j = Convert.ToInt32(Console.ReadLine())
+            add(i, j);
+            Console.ReadLine();
+        }
+        public static void add(int a, int b)
+        {
+            int i;
+            try
+            {
+                i = a / b;
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
+            Console.ReadLine();
+        }
+
 // program -9
