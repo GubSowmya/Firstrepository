@@ -1,0 +1,21 @@
+ 1) What is the default access specifier of a class?----- private
+          
+    2) is there a default access specifier for a interface, and if its there what is it?-----No, it must be specified explicitly, and may be considered as internal
+    3) what is the default access specifier for interface members--no default,no access specifier is allowed    
+        4) Can a abstract class have a private member---Yes
+        5) Can a abstract class's abstract method be private?----yes
+        6) Can Interface inherit abstract class?----no, interface can only inherit interface
+        7) Can a abstract class inherit interface?---yes
+        8) Can I inherit abstract class as well as interface in a class?---yes
+        9) Can I make a abstract class private? no , no class  could be made private,protected,protected internal etc
+
+1) create a abstract class Person, with a abstract method Work.
+Implment the Person class in multiple classes like Employee,Manager and clerk.
+2) Create a interface IBank with method PrintBalance, CalculateInterest
+3) Create 2 classes Saving and Current.
+Inherit and implement Ibank interface.
+4) Write specific methods in the Saving and current Class to calculateInterest.(saving account interest rate 4 % and current is 2%)
+5)Write extension methods for Saving and Current Account class to 
+Withdraw, taking amt as parameter.
+6)Same ways write extension method for Deposit as well.
+7)Write a method to calculate the number of days deposit amt kept in the bank.
