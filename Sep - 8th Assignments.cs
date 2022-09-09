@@ -70,6 +70,7 @@ namespace Sep_8th_Assignments
                     }
 
         }
+          Console.ReadLine();
 
     }
 }
