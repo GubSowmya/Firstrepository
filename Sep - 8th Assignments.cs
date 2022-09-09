@@ -48,22 +48,28 @@ namespace Sep_8th_Assignments
                     {
                         Console.WriteLine("Number of Employees can't be more than 10");
                     }
-          
-
-           
-
-            
-
-           List<Employees> list = new List<Employees>();
-            Console.WriteLine(list);
-            
+              
+              
+                   Console.WriteLine("Select one 1. update or 2. delete ");
+                   string str = Console.ReadLine();
+                    if (str == "updtae")
+                    {
+                        Console.WriteLine("Enter ID to Update Employee details:");
+                        int id1 = Convert.ToInt32(Console.ReadLine());
+                        Delegate d1 = new Delegate(emp.Update);
+                        d1(id1);
+                       
+                    }
+                    else (str == "delete")
+                    {
+                        Console.WriteLine("Enter ID to Delete Employee details:");
+                        int id1 = Convert.ToInt32(Console.ReadLine());
+                        Delegate1 d2 = new Delegate1(emp.Delete);
+                        d2(id1);
+                      
+                    }
 
         }
-
-
-
-
-
 
     }
 }
