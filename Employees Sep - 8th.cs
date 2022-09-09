@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PSLib
 {
-   // public delegate void Delegate(int id);
+   public delegate void Delegate(int id);
     public class Employees
     {
         private int _id;
@@ -44,7 +44,7 @@ namespace PSLib
             set { mgr = value; }
         }
 
-        //public static event Delegate Event1;
+        public static event Delegate Event;
         public void Add(int id)
         {
             EmpID = id;
@@ -88,11 +88,6 @@ namespace PSLib
                 MGR = 0;
             }
 
-
-        }
-
-    
-           
-         
+        }         
     }
 }
