@@ -11,23 +11,48 @@ namespace Sep_8th_Assignments
     {
       public static void Main(String[] args)
         {
+          
+          
+          
+          Console.WriteLine("Enter the username");
+          string username = Convert.ToString(Console.ReadLine());
+          
+          
+          Console.WriteLine("Enter the password");
+          string password = Convert.ToString(Console.ReadLine());
+          
+          
+          if (username != null && password != null)
+                {
+                    Console.WriteLine("Logged in successfully");
+                   
+                    Department dpt = new Department();
+                  Employees emp = new Employees();
 
-            Department dpt = new Department();
-            Employees emp = new Employees();
+                  emp.Add(501);
+                  emp.update(501);
+             
+                    Console.WriteLine("Enter Number of Employees in Dept: ");
+                    int cnt = Convert.ToInt32(Console.ReadLine());
+                    if (cnt <= 10)
+                    {
+                        for (int i = 0; i < cnt; i++)
+                        {
+                            Console.WriteLine("Enter Emplyoyee ID: ");
+                            int id = Convert.ToInt32(Console.ReadLine());
+                            Delegate d = new Delegate(emp.Add);
+                            d(id);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Number of Employees can't be more than 10");
+                    }
+          
 
-            emp.Add(501);
-            emp.update(501);
+           
 
-            Console.WriteLine("Enter Number of Employees in Dept: ");
-            int no = Convert.ToInt32(Console.ReadLine());
-            if(no > 10)
-            {
-                Console.WriteLine("Can not add more than ten employees");
-            }
-            else
-            {
-                emp.Add(no);
-            }
+            
 
            List<Employees> list = new List<Employees>();
             Console.WriteLine(list);
