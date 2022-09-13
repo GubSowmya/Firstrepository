@@ -230,7 +230,7 @@ int i, j;
             Console.WriteLine("Enter 2nd Number:");
             j = Convert.ToInt32(Console.ReadLine())
             add(i, j);
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
         public static void add(int a, int b)
         {
