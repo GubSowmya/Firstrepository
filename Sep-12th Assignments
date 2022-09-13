@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Calculator
+{
+    public class Calc
+    {
+        public double _num;
+
+        public double Num
+        {
+            get { return _num; }
+            set { _num = value; }
+        }
+        public double Cube(double No)
+        {
+            double n = Num * Num * Num;
+            return n;
+        }
+        public double Sqrt(double number)
+        {
+            double res = Math.Sqrt(number);
+            return res;
+        }
+    }
+
+
+}
+--------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CustomAttributes
+{
+    public class SteroDisc
+    {
+        
+        public class DeveloperAttribute : Attribute
+        {
+            // Private fields.
+            private string song;
+            private string language;
+            private string lyrics;
+
+            // This constructor defines two required parameters: name and level.
+
+            public DeveloperAttribute(string song, string language,string lyrics)
+            {
+                this.song = song;
+                this.language = language;
+                this.lyrics = lyrics;
+            }
+
+            // Define Name property.
+            // This is a read-only attribute.
+
+            public virtual string songName
+            {
+                get { return song; }
+            }
+
+            // Define Level property.
+            // This is a read-only attribute.
+
+            public virtual string Language
+            {
+                get { return language; }
+            }
+
+            // Define Reviewed property.
+            // This is a read/write attribute.
+
+            public virtual string lyrics 
+            {
+                get { return lyrics; }
+                
+            }
+        }
+    }
+}
